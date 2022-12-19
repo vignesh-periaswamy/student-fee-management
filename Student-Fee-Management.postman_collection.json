@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "76a5d2c2-cdba-4eb3-b12c-a05a5d111d17",
+		"name": "Student-Fee-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Student Fee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cardNo\": \"124\",\n  \"cardType\": \"master\",\n  \"feeAmt\": 10.25,\n  \"gradeId\": 1,\n  \"studentId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/student/fee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"student",
+						"fee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student-Fee-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cardNo\": \"124\",\n  \"cardType\": \"master\",\n  \"feeAmt\": 11.25,\n  \"gradeId\": 1,\n  \"studentId\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/student/fee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"student",
+						"fee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student-Fee-3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cardNo\": \"234567\",\n  \"cardType\": \"master\",\n  \"feeAmt\": 12.25,\n  \"gradeId\": 1,\n  \"studentId\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/student/fee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"student",
+						"fee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Student Receipt by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/v1/student/1/receipt/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"student",
+						"1",
+						"receipt",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
